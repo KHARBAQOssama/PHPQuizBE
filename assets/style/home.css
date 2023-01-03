@@ -64,7 +64,24 @@ body nav {
           align-items: center;
   height: 9vh;
 }
-body nav div {
+body nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+body nav .nav div a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+body nav .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,12 +101,18 @@ body nav div {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-body nav div div {
+body nav .user .first-letter {
   width: 20px;
   height: 20px;
   padding: 2px;
   color: #ffffff;
   background-color: #39C5B4;
+  border-radius: 50%;
+  padding-bottom: 7px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 body main {
   height: 91vh;

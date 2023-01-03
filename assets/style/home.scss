@@ -10,7 +10,18 @@ body{
         justify-content: space-between;
         align-items: center;
         height: 9vh;
-        div{
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            div a{
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 400;
+            }
+        }
+        .user{
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -24,13 +35,19 @@ body{
             -moz-border-radius: 25px ;
             -ms-border-radius: 25px ;
             -o-border-radius: 25px ;
-            div{
+            .first-letter{
                 width: 20px;
                 height: 20px;
                 padding: 2px;
                 color: #ffffff;
                 background-color: #39C5B4;
-            }
+                border-radius: 50%;
+                padding-bottom: 7px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+}
 }
         // h3{
         //     color: #ffffff

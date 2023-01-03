@@ -54,11 +54,11 @@ class Person{
     public static function viewUserScores(){
         $conn = new Db;
         $pdo = $conn->connection();
-        $sql = "SELECT DISTINCT scores.score,users.username FROM scores INNER JOIN users ON scores.userId = users.id ORDER BY scores.score DESC";
+        $sql = "SELECT scores.score,users.username FROM scores INNER JOIN users ON scores.userId = users.id ORDER BY scores.score DESC";
         $statement = $pdo->prepare($sql);
         $statement->execute();
 
-        return $statement;
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 }
 

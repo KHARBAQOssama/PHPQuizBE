@@ -20,7 +20,18 @@ body{
         // #create-account{
         //     @extend .secodaryButton;
         // }
-        div{
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            div a{
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 400;
+            }
+        }
+        .user{
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -34,26 +45,33 @@ body{
             -moz-border-radius: 25px ;
             -ms-border-radius: 25px ;
             -o-border-radius: 25px ;
-            div{
+            .first-letter{
                 width: 20px;
                 height: 20px;
                 padding: 2px;
                 color: #ffffff;
                 background-color: #39C5B4;
-            }
-    }}
+                border-radius: 50%;
+                padding-bottom: 7px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+}    
+    
+    }
     main{
         height: 89.2vh;
         background-color: #204b46;
         // position: relative;
-
-        .stepper{
-            width: 60%;
-            height: 30px;
-            display: flex;
-            justify-content: space-between;
-            background-color: #ffffff;
-        }
+        
+        // .stepper{
+        //     width: 60%;
+        //     height: 30px;
+        //     display: flex;
+        //     justify-content: space-between;
+        //     background-color: #ffffff;
+        // }
         section{
             width: 60%;
             display: flex;
@@ -222,11 +240,11 @@ body{
                     width: 0%;
                     background-color: yellow;
                     height: 60px;
-                    border-radius: 16px 0 0 16px;
-                    -webkit-border-radius: 16px 0 0 16px;
-                    -moz-border-radius: 16px 0 0 16px;
-                    -ms-border-radius: 16px 0 0 16px;
-                    -o-border-radius: 16px 0 0 16px;
+                    border-radius: 16px;
+                    -webkit-border-radius: 16px;
+                    -moz-border-radius: 16px;
+                    -ms-border-radius: 16px;
+                    -o-border-radius: 16px;
                     -webkit-transition: all 1s ease;
                     -moz-transition: all 1s ease;
                     -ms-transition: all 1s ease;

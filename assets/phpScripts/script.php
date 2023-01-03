@@ -45,3 +45,36 @@ function saveScore(){
 
     header('location: ./../../home.php');
 }
+
+
+function listScores(){
+    $scores = Person::viewUserScores();
+    // echo '<pre>';
+    //  var_dump($scores);
+    //  echo '</pre>';
+    //  die();
+    for($i=0;$i<count($scores);$i++){
+        ?>
+    <tr class="">
+        <td class=""><?=  $i+1; ?></td>
+        <td class=""><?=  $scores[$i]['username']; ?></td>
+        <td class=""><?=  $scores[$i]['score']; ?></td>
+    </tr> 
+    <?php
+}}
+
+function listMyScores(){
+    $scores = User::viewOwnScores($_SESSION['profile'][0]['id']);
+    // echo '<pre>';
+    //  var_dump($scores);
+    //  echo '</pre>';
+    //  die();
+    for($i=0;$i<count($scores);$i++){
+        ?>
+    <tr class="">
+        <td class=""><?=  $i+1; ?></td>
+        <td class=""><?=  $_SESSION['profile'][0]['username']; ?></td>
+        <td class=""><?=  $scores[$i]['score']; ?></td>
+    </tr> 
+    <?php
+}}

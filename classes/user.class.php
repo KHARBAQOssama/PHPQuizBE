@@ -30,7 +30,7 @@ class User extends Person {
         $sql = "SELECT score FROM scores WHERE userId = ? ORDER BY score DESC";
         $statement = $pdo->prepare($sql);
         $statement->execute([$id]);
-        return $statement;
+        return $statement->fetchAll(PDO::FETCH_ASSOC);;
     }
 
     

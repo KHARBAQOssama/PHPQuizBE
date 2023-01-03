@@ -64,47 +64,26 @@ body nav {
           align-items: center;
   height: 9vh;
 }
-body nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100px;
-  height: 30px;
-  background-color: #ffffff;
-  color: #39C5B4;
-  font-weight: bold;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-}
-body nav div div {
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  color: #ffffff;
-  background-color: #39C5B4;
-}
-body main {
-  height: 89.2vh;
-  background-color: #204b46;
-}
-body main .stepper {
-  width: 60%;
-  height: 30px;
+body nav .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+body nav .nav div a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+body main {
+  height: 89.2vh;
+  background-color: #204b46;
 }
 body main section {
   width: 60%;
@@ -306,11 +285,11 @@ body main .result .stars .star-fill {
   width: 0%;
   background-color: yellow;
   height: 60px;
-  border-radius: 16px 0 0 16px;
-  -webkit-border-radius: 16px 0 0 16px;
-  -moz-border-radius: 16px 0 0 16px;
-  -ms-border-radius: 16px 0 0 16px;
-  -o-border-radius: 16px 0 0 16px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
