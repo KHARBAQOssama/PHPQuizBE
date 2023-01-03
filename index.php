@@ -11,18 +11,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <!-- css  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 
     <title>Document</title>
 </head>
 <body>
     <nav>
         <h3 class="logo">PHP KNOWLEDGE TEST</h3>
-        <button id="log-in">LOG IN</button>
     </nav>
     <div>
-        <button id="guest">PLAY AS A GUEST</button>
-        <button id="create-account">CREATE AN ACCOUNT</button>
+        <button id="create-account"><a href="sign.php">CREATE AN ACCOUNT</a></button>
     </div>
 </body>
 </html>

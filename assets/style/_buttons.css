@@ -6,9 +6,10 @@
           box-sizing: border-box;
   color: black;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
-.brandButton, body div #guest, body nav #log-in {
+.brandButton {
   background-color: transparent;
   border: 2px solid white;
   padding: 5px 15px;
@@ -21,11 +22,15 @@
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-.brandButton:hover, body div #guest:hover, body nav #log-in:hover {
+.brandButton:hover {
   background-color: rgba(255, 255, 255, 0.153);
 }
+.brandButton a {
+  text-decoration: none;
+  color: white;
+}
 
-.secodaryButton, body div #create-account {
+.secodaryButton {
   cursor: pointer;
   background-color: white;
   padding: 5px 15px;
@@ -35,37 +40,8 @@
   -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.304);
           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.304);
 }
-
-body {
-  background: url(126.png) no-repeat;
-  background-color: #39C5B4;
-  background-size: 60%;
-  background-position: 3em 4em;
+.secodaryButton a {
+  text-decoration: none;
+  color: #39C5B4;
 }
-body nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1em 2em;
-}
-body nav h3 {
-  color: white;
-}
-body div {
-  width: 300px;
-  position: absolute;
-  bottom: 13%;
-  right: 8%;
-  margin: 2em;
-}
-body div #guest, body div #create-account {
-  width: 100%;
-  margin: 0.5em;
-  height: 40px;
-}
+/*# sourceMappingURL=_buttons.css.map */

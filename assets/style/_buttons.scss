@@ -5,6 +5,7 @@
     box-sizing: border-box;
     color: black;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 .brandButton{
@@ -23,6 +24,10 @@
             &:hover{
                 background-color: rgba(255, 255, 255, 0.153);
             }
+            a{
+    text-decoration: none;
+    color: white;
+    }
 }
 .secodaryButton{
         cursor: pointer;
@@ -32,42 +37,8 @@
             color: #39C5B4;
             font-weight: bold;
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.304);
-}
-body{
-    background: url(126.png)  no-repeat;
-    background-color: #39C5B4;
-    background-size: 60%;
-    background-position: 3em 4em;
-
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1em 2em;
-        
-        h3{
-            color: white;
-        }
-        #log-in{
-            @extend .brandButton;
-        }
-    }
-    div{
-        width: 300px;
-        position: absolute;
-        bottom: 13%;
-        right: 8%;
-        margin: 2em;
-        #guest,#create-account{
-            width: 100%;
-            margin: .5em;
-            height: 40px;
-        }
-        #guest{
-            @extend .brandButton;
-        }
-        #create-account{
-            @extend .secodaryButton;
-        }
-    }
+            a{
+                text-decoration: none;
+                color: #39C5B4;
+                }
 }

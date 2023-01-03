@@ -1,0 +1,39 @@
+@import 'buttons';
+body{
+    background: url(126.png)  no-repeat;
+    background-color: #39C5B4;
+    background-size: 60%;
+    background-position: 3em 4em;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+        
+        h3{
+            color: white;
+        }
+        #log-in{
+            @extend .brandButton;
+        }
+    }
+    div{
+        width: 300px;
+        position: absolute;
+        bottom: 13%;
+        right: 8%;
+        margin: 2em;
+        #guest,#create-account{
+            width: 100%;
+            margin: .5em;
+            height: 40px;
+        }
+        #guest{
+            @extend .brandButton;
+        }
+        #create-account{
+            @extend .secodaryButton;
+        }
+    }
+}

@@ -25,22 +25,13 @@ class Person{
         $statement = $pdo->prepare($sql);
         $statement->execute([$password,$user,$user]);
         
-        return $statement;
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public static function signOut(){
         unset($_SESSION['profile']);
     }
 
-    public static function viewAllQuiz(){
-        $conn = new Db;
-        $pdo = $conn->connection();
-        $sql = "SELECT * FROM quizs";
-        $statement = $pdo->prepare($sql);
-        $statement->execute();
-
-        return $statement;
-    }
 
     public static function deleteUserAccount($id){
         $conn = new Db;
@@ -54,6 +45,16 @@ class Person{
         $conn = new Db;
         $pdo = $conn->connection();
         $sql = "SELECT * FROM users WHERE role = 2";
+        $statement = $pdo->prepare($sql);
+        $statement->execute();
+
+        return $statement;
+    }
+
+    public static function viewUserScores(){
+        $conn = new Db;
+        $pdo = $conn->connection();
+        $sql = "SELECT DISTINCT scores.score,users.username FROM scores INNER JOIN users ON scores.userId = users.id ORDER BY scores.score DESC";
         $statement = $pdo->prepare($sql);
         $statement->execute();
 

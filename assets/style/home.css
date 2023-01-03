@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.brandButton, body main .quiz .take-it .take-quiz-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 5px 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.brandButton:hover, body main .quiz .take-it .take-quiz-btn:hover {
+  background-color: rgba(255, 255, 255, 0.153);
+}
+.brandButton a, body main .quiz .take-it .take-quiz-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.secodaryButton {
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 15px;
+  border: none;
+  color: #39C5B4;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.304);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.304);
+}
+.secodaryButton a {
+  text-decoration: none;
+  color: #39C5B4;
+}
+
+body {
+  background-color: #ffffff;
+}
+body nav {
+  background-color: #39C5B4;
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.365);
+          box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.365);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 9vh;
+}
+body nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: #ffffff;
+  color: #39C5B4;
+  font-weight: bold;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+body nav div div {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  color: #ffffff;
+  background-color: #39C5B4;
+}
+body main {
+  height: 91vh;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+body main .quiz {
+  width: 40%;
+  height: 300px;
+  position: relative;
+  margin: 1em;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.425);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.425);
+  background-color: #39C5B4;
+}
+body main .quiz .quiz-js-image, body main .quiz quiz-php-image {
+  width: 100%;
+  height: 235px;
+  background-size: cover;
+  background-position: center center;
+}
+body main .quiz .quiz-js-image {
+  background-image: url(js.png);
+}
+body main .quiz .quiz.quiz-php-image {
+  background-image: url(php.png);
+}
+body main .quiz h4 {
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+body main .quiz .quiz-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.5em;
+}
+body main .quiz .quiz-bottom .user-image {
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  margin: 0.6em 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+body main .quiz .quiz-bottom div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body main .quiz .quiz-bottom div span {
+  font-size: 10px;
+  float: right;
+}
+body main .quiz:hover > .take-it {
+  opacity: 1;
+}
+body main .quiz .take-it {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+body main .quiz .take-it .take-quiz-btn {
+  width: 60%;
+  height: 33px;
+  border-color: #39C5B4;
+  color: #39C5B4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body main .quiz .take-it .take-quiz-btn:hover {
+  width: 70%;
+  height: 40px;
+}
+body main .quiz .take-it.js {
+  background-color: rgba(255, 255, 0, 0.345);
+}
+body main .quiz .take-it.php {
+  background-color: rgba(143, 28, 167, 0.655);
+}
+/*# sourceMappingURL=home.css.map */

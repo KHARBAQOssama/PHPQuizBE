@@ -24,23 +24,15 @@ class User extends Person {
                     ]);
     }
 
-    public static function viewUserScores($id){
+    public static function viewOwnScores($id){
         $conn = new Db;
         $pdo = $conn->connection();
-        $sql = "SELECT * FROM scores WHERE user = ?";
+        $sql = "SELECT score FROM scores WHERE userId = ? ORDER BY score DESC";
         $statement = $pdo->prepare($sql);
         $statement->execute([$id]);
-
         return $statement;
     }
 
-    public static function viewUserQuiz($id){
-        $conn = new Db;
-        $pdo = $conn->connection();
-        $sql = "SELECT * FROM quizs WHERE publisher = ?";
-        $statement = $pdo->prepare($sql);
-        $statement->execute([$id]);
+    
 
-        return $statement;
-    }
 }

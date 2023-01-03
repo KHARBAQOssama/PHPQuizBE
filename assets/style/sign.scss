@@ -1,0 +1,78 @@
+@import 'buttons';
+body{
+    background-color: #39C5B4;
+    nav{
+        
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.365);
+        display: flex;
+        padding: 2em 2em;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        
+        #guest{
+            @extend .brandButton;
+        }
+        
+    }
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3em;
+        .sign-container{
+            background-color: white;
+            width: 350px;
+            box-shadow: 2px 2px 8px rgba(50, 46, 46, 0.317);
+            header {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                div{
+                    text-align: center;
+                    background-color: #39C5B4;
+                    color: white;
+                    font-weight: bold;
+                    width: 50%;
+                    padding: .5em 0;
+                }
+                .active{
+                    color: #39C5B4;
+                    background-color: white;
+                }
+            }
+            form{
+                
+                width: 100%;
+                padding:.5em 1em;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                input{
+                    width: 85%;
+                    margin: .5em 0;
+                    height: 30px;
+                    border: 2px solid #39C5B4;
+                }
+                button{
+                    background-color: #39C5B4;
+                    border: 2px solid #39C5B4;
+                    color: #ffffff;
+                    width: 50%;
+                    padding: .3em;
+                    margin: 1em;
+                }
+
+            }
+            form.active{
+                display: flex;
+            }
+        }
+    }
+}
+
+.invalid{
+    border: 2px solid rgba(255, 0, 0, 0.176) !important;
+    background-color: #ff000031;
+}
