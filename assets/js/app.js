@@ -191,5 +191,5 @@ function result(){
 
 exitQuiz.onclick = () =>{
     let id = exitQuiz.getAttribute('userId');
-    window.location.href = "./assets/phpScripts/script.php?id=" +id + "&score=" + (correctAnswers/total)*100;
+    window.location.href = "http://localhost/PHPQuizBE/assets/phpScripts/script.php?id=" +id + "&score=" + (correctAnswers/total)*100;
 }

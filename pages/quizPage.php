@@ -1,6 +1,6 @@
 <?php 
-require  __DIR__.'/autoloader.php';
-include_once 'assets/phpScripts/script.php';
+require  __DIR__.'/../autoloader.php';
+include_once '../assets/phpScripts/script.php';
 if(!isset($_SESSION['profile'])){
     header('location: sign.php');
 }
@@ -15,7 +15,7 @@ if(!isset($_SESSION['profile'])){
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
 
-    <link rel="stylesheet" href="assets/style/quiz.css">
+    <link rel="stylesheet" href="../assets/style/quiz.css">
 
     <title>Document</title>
 </head>
@@ -112,6 +112,6 @@ if(!isset($_SESSION['profile'])){
 
     </main>
 
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@
         <h3 class="logo">PHP KNOWLEDGE TEST</h3>
     </nav>
     <div>
-        <button id="create-account"><a href="sign.php">CREATE AN ACCOUNT</a></button>
+        <button id="create-account"><a href="pages/sign.php">CREATE AN ACCOUNT</a></button>
     </div>
 </body>
 </html>

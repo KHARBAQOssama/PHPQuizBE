@@ -1,5 +1,5 @@
 <?php 
-include_once 'assets/phpScripts/script.php';
+include_once '../assets/phpScripts/script.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@ include_once 'assets/phpScripts/script.php';
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <!-- css  -->
-    <link rel="stylesheet" href="assets/style/home.css">
+    <link rel="stylesheet" href="../assets/style/home.css">
 
     <title>Document</title>
 </head>
@@ -18,7 +18,7 @@ include_once 'assets/phpScripts/script.php';
         <?php include 'nav.php';?>
     <main>
         <div style="width: 60%;">
-                    <table class="ranking-table" style="width: 100%;">
+                    <table class="ranking-table" style="width : 100%; ">
                                             <tr class="">
                                                 <td class="">N</td>
                                                 <td class="">USER NAME</td>
@@ -27,12 +27,12 @@ include_once 'assets/phpScripts/script.php';
                                             </tr> 
                                             
                                             <?php 
-                                                listScores();
+                                                listMyScores();
                                             ?> 
                                            </table></div>
     </main>
     
 
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@ function signUp(){
     $user->signUp();
 
     $_SESSION['profile'] = Person::signIn($email,$password);
-    header('location: ../../home.php');
+    header('location: ../../pages/home.php');
 }
 
 
@@ -30,7 +30,7 @@ function signIn(){
     $password = $_POST['password-in'];
 
     $_SESSION['profile'] = Person::signIn($email,$password);
-    header('location: ../../home.php');
+    header('location: ../../pages/home.php');
 }
 
 function saveScore(){
@@ -43,7 +43,7 @@ function saveScore(){
     unset($_GET['id']);
     unset($_GET['score']);
 
-    header('location: ./../../home.php');
+    header('location: ./../../pages/home.php');
 }
 
 

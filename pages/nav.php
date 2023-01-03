@@ -1,5 +1,5 @@
 <nav>
-    <h3><img src="assets/style/126.png" height="45px" alt=""></h3>
+    <h3><img src="../assets/style/126.png" height="45px" alt=""></h3>
     <div class="nav">
         <div class="home"><a href="home.php">HOME</a></div>
         <div class="rank"><a href="ranking.php">RANKING</a></div>
